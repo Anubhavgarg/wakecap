@@ -3,8 +3,8 @@
 const express = require('express'),
     bodyParser = require('body-parser'),
     app = express();
-app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
-app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ limit: '1mb', extended: true }));
+app.use(bodyParser.json({ limit: '1mb' }));
 
 app.use("/api/v1/file", require("./routes/file"));
 
