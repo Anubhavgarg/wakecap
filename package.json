@@ -1,0 +1,47 @@
+{
+    "name": "wakecup",
+    "version": "1.0.0",
+    "description": "wakecup backend services",
+    "main": "app.js",
+    "scripts": {
+        "test": "environment=test nyc --reporter html --reporter text node app.js",
+        "coverage": "nyc --reporter html --reporter text node app.js && open coverage/index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Anubhavgarg/wakecap.git"
+    },
+    "keywords": [
+        "tripeur",
+        "api"
+    ],
+    "author": "anubhav garg",
+    "license": "ISC",
+    "dependencies": {
+        "async": "^2.6.0",
+        "bcrypt": "^2.0.1",
+        "bcrypt-nodejs": "0.0.3",
+        "bitly": "^5.0.12",
+        "bluebird": "^3.7.2",
+        "body-parser": "^1.18.2",
+        "compress": "^0.99.0",
+        "compression": "^1.7.2",
+        "express": "^4.16.3",
+        "express-validate": "0.0.8",
+        "express-validator": "^5.1.2",
+        "extract-zip": "^1.6.6",
+        "multer": "^1.3.0",
+        "nock": "^10.0.6",
+        "request": "^2.88.2",
+        "request-promise": "^4.2.2",
+        "sinon": "^7.2.5"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "chai-as-promised": "7.1.1",
+        "chai-http": "^4.0.0",
+        "country-list": "^2.1.0",
+        "mocha": "^6.2.2",
+        "nyc": "^14.1.1"
+    }
+}
