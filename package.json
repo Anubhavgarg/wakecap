@@ -4,7 +4,7 @@
     "description": "wakecup backend services",
     "main": "app.js",
     "scripts": {
-        "test": "environment=test nyc --reporter html --reporter text node app.js",
+        "test": "mocha test/file.js --timeout 10000",
         "coverage": "nyc --reporter html --reporter text node app.js && open coverage/index.html"
     },
     "repository": {
