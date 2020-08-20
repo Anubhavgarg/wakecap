@@ -19,7 +19,7 @@
     "license": "ISC",
     "dependencies": {
         "async": "^2.6.0",
-        "bcrypt": "^2.0.1",
+        "bcrypt": "^5.0.0",
         "bcrypt-nodejs": "0.0.3",
         "bitly": "^5.0.12",
         "bluebird": "^3.7.2",
